@@ -1,54 +1,41 @@
-gsap.from("#model1",{
-    duration : 1.5,
-    x : 300,
-    opacity : 0,
-    ease : Power1.easeInOut,
-    delay : 3,
-    zIndex : -3
-})
-gsap.from("#model2",{
-    duration : 1.25,
-    x : 300,
-    y : 50,
-    opacity : 0,
-    ease : Power1.easeInOut, 
-    delay : 2,
-    zIndex : -2
+/* function scrollRight() {
+document.getElementById("scrollArea").scrollBy({ left: 255, behavior: 'smooth' });
+}
 
-})
-gsap.from("#model3",{
-    duration : 1.5,
-    y : 500,
-    opacity : 0,
-    ease : Power1.easeInOut
-})
-gsap.from("#model4",{
-    duration : 1.25,
-    x : -300,
-    y : 50,
-    opacity : 0,
-    ease : Power1.easeInOut,
-    delay : 2,
-    zIndex : -2
-})
-gsap.from("#model5",{
-    duration : 1.5,
-    x : -300,
-    opacity : 0,
-    ease : Power1.easeInOut,
-    delay : 3,
-    zIndex : -3
+function scrollLeft() {
+document.getElementById("scrollArea").scrollBy({ left: -255, behavior: 'smooth' });
+}
 
-})
 
-gsap.from("#div1_left::after",{
-    duration : 1.5,
-    scale : 0,
-    ease : Power1.easeInOut   
-})
+function highlightCenterItem() {
+const container = document.getElementById("scrollArea");
+const items = container.querySelectorAll(".item");
+const containerCenter = container.scrollLeft + container.offsetWidth / 2;
 
-gsap.from("#div1_right::after",{
-    duration : 1.5,
-    scale : 0,
-    ease : Power1.easeInOut
-})
+let closestItem = null;
+let closestDistance = Infinity;
+
+items.forEach(item => {
+    const itemCenter = item.offsetLeft + item.offsetWidth / 2;
+    const distance = Math.abs(containerCenter - itemCenter);
+    
+    if (distance < closestDistance) {
+    closestDistance = distance;
+    closestItem = item;
+    }
+
+    // Reset all
+    item.style.transform = "translateY(0px)";
+});
+
+  // Lower the center one
+if (closestItem) {
+    closestItem.style.transform = "translateY(20px)";
+}
+}
+
+document.getElementById("scrollArea").addEventListener("scroll", () => {
+clearTimeout(window.scrollTimeout);
+window.scrollTimeout = setTimeout(highlightCenterItem, 100);
+});
+ */
