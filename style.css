@@ -211,26 +211,55 @@ nav{
     }
 }
 
+.outer-container button{
+    position: absolute;
+    z-index: 99;
+    height: 50px;
+    width: 50px;
+}
+
+#right_button {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#left_button {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 .outer-container {
     height: calc(100vh - 27vh);
-    display: flex;
-    align-items: center;
-    gap: 50px;
     background-color: aqua;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
 }
 
 .scroll-container {
+    height: 90%;
+    width: 99%;
+    gap: 1vw;
     display: flex;
-    height: 350px;
+    align-items: center;
     overflow-x: auto;
     scroll-behavior: smooth;
-    background-color: brown;
-    width: 1291px;
+    background-color: brown;    
 }
 
 .item {
-    min-width: 255px;
-    height: 300px;
+    min-width: 18.75vw;
+    height: 50vh;
     background: #ccc;
     flex-shrink: 0;
     display: flex;

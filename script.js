@@ -33,7 +33,7 @@ gsap.from("#nav_right", {
 });
 
 
-/* function scrollRight() {
+function scrollRight() {
 document.getElementById("scrollArea").scrollBy({ left: 255, behavior: 'smooth' });
 }
 
@@ -72,7 +72,7 @@ if (closestItem) {
 document.getElementById("scrollArea").addEventListener("scroll", () => {
 clearTimeout(window.scrollTimeout);
 window.scrollTimeout = setTimeout(highlightCenterItem, 100);
-}); */
+});
 
 
 
