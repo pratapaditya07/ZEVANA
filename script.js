@@ -32,6 +32,26 @@ gsap.from("#nav_right", {
   delay : 3.5
 });
 
+gsap.from("#item3", {
+  duration: 2,
+  marginTop: "75vh",
+  ease: "power2.inOut",
+  delay : 3.5
+});
+
+gsap.from("#item4", {
+  duration: 2,
+  marginLeft: "-10vw",
+  ease: "power2.inOut",
+  delay : 4.5
+});
+
+gsap.from("item5", {
+  duration: 2,
+  marginLeft: "-25vw",
+  ease: "power2.inOut",
+  delay : 4.5
+});
 
 function scrollRight() {
 document.getElementById("scrollArea").scrollBy({ left: 255, behavior: 'smooth' });
