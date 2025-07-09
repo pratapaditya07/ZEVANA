@@ -21,6 +21,9 @@
     position: absolute;
     top: 0;
     overflow: hidden;
+    display: flex;
+    align-items:baseline;    
+    justify-content:center ;
 }
 
 #upper_loader h1{
@@ -40,23 +43,16 @@
     overflow: hidden;
 }
 
-#lower_loader h1{
-    font-family: 'melodrama', cursive;
-    color: white;
-    font-size: 20vw;
-    text-align: center;
-    margin-top: -30vh;
-}
-
 /* -------------------------------------NAVBAR-------------------- */
 nav{
-    height: 12vh;
+    height: 6vw;
     width: 100%;
     display: flex;
     align-items: center;
     color: white;
     position: fixed;
     z-index: 100;
+    padding: 0vw 1vw 0vw 1.5vw;
 }
 
 #nav_left{
@@ -67,7 +63,6 @@ nav{
     font-size: 2.8vw;
     font-family: 'limelight', cursive;
     gap: 1vw;
-    padding-left: 1vw;
 }
 
 #nav_right{
@@ -76,7 +71,8 @@ nav{
     display: flex;
     align-items: center;
     justify-content: end;
-    margin-right: 1vw;
+    gap: 1vw;
+    font-size: 1.5vw;
 }
 
 #search_button{
@@ -87,16 +83,12 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5vw;
-    margin-right: 1vw;
 }
 #cart_button{
     height: 3.5vw;
     width: 3.5vw;
     border-radius: 50%;
     border: 1px solid rgb(232, 232, 232);
-    font-size: 1.5vw;
-    margin-right: 1vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,7 +115,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(76, 74, 74);
+    background-color: rgba(76, 74, 74, 0.66);
 }
 
 /* -------------------------------------DIV1-------------------- */
@@ -187,7 +179,8 @@ nav{
     justify-content: end;
     font-family: satoshi , sans-serif;
     font-size: 2.8rem;
-    font: optional;font-weight: 400;
+    font: optional;
+    font-weight: 400;
     line-height: 1;
     letter-spacing: 0.18em;
 }
@@ -215,10 +208,10 @@ nav{
 /* ------------------------------------------------------------------------------------------------- */
 
 .outer-container button{
-    position: absolute;
-    z-index: 99;
     height: 50px;
     width: 50px;
+    position: fixed;
+    z-index: 100;
 }
 
 #right_button {
@@ -247,9 +240,7 @@ nav{
     align-items: center;    
     justify-content: center;
     margin-top: -75vh;
-    position: fixed; 
-    z-index: 100;
-    background-color: rgb(35, 154, 17);
+    position: relative;
 }
 
 .scroll-container {
@@ -260,7 +251,8 @@ nav{
     align-items: center;
     overflow-x: auto;
     scroll-behavior: smooth;
-    background-color: tomato;
+    position: fixed;
+    z-index: 99;
 }
 
 .item {

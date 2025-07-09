@@ -2,14 +2,14 @@ gsap.to("#upper_loader", {
   height: 0,
   duration: 2.5,
   ease: "power2.inOut",
-  delay : 2
+  delay : 1.5
 });
 
 gsap.to("#lower_loader", {
   height: 0,
   duration: 2.5,
   ease: "power2.inOut",
-  delay : 2
+  delay : 1.5
 });
 
 gsap.to("#loader", {
@@ -27,18 +27,17 @@ gsap.from("#nav_left", {
 
 gsap.from("#nav_right", {
   marginLeft: 1500,
-  duration: 2,
+  duration: 1.5,
   ease: "power2.inOut",
   delay : 3.5
 });
 
-/* gsap.from("#item1", {
-  duration: 2,
+gsap.from("#item1", {
+  duration: 1.5,
   x : 300,
   opacity : 0,
-  marginLeft: "-25vw",
   ease: "power2.inOut",
-  delay : 6.5,
+  delay : 7,
   zIndex:-3
 });
 
@@ -48,7 +47,7 @@ gsap.from("#item2", {
   y: 50,
   opacity: 0,
   ease: "power2.inOut",
-  delay : 4.5,
+  delay : 5,
   zIndex: -2
 });
 
@@ -65,26 +64,25 @@ gsap.from("#item4", {
   y: 50,
   opacity: 0,
   ease: "power2.inOut",
-  delay : 4.5,
+  delay : 5,
   zIndex: -2
 });
 
 gsap.from("#item5", {
-  duration: 2,
+  duration: 1.5,
   x : -300,
   opacity : 0,
-  marginLeft: "-25vw",
   ease: "power2.inOut",
-  delay : 6.5,
+  delay : 7,
   zIndex:-3
 });
- */
+
 function scrollRight() {
 document.getElementById("scrollArea").scrollBy({ left: 255, behavior: 'smooth' });
 }
 
 function scrollLeft() {
-document.getElementById("scrollArea").scrollBy({ left: -255, behavior: 'smooth' });
+document.getElementById("scrollArea").scrollBy({ left: 255, behavior: 'smooth' });
 }
 
 
