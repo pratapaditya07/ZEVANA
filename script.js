@@ -32,27 +32,53 @@ gsap.from("#nav_right", {
   delay : 3.5
 });
 
+/* gsap.from("#item1", {
+  duration: 2,
+  x : 300,
+  opacity : 0,
+  marginLeft: "-25vw",
+  ease: "power2.inOut",
+  delay : 6.5,
+  zIndex:-3
+});
+
+gsap.from("#item2", {
+  duration: 2,
+  x : 300,
+  y: 50,
+  opacity: 0,
+  ease: "power2.inOut",
+  delay : 4.5,
+  zIndex: -2
+});
+
 gsap.from("#item3", {
   duration: 2,
-  marginTop: "75vh",
+  y: "150vh",
   ease: "power2.inOut",
   delay : 3.5
 });
 
 gsap.from("#item4", {
   duration: 2,
-  marginLeft: "-10vw",
+  x : -300,
+  y: 50,
+  opacity: 0,
   ease: "power2.inOut",
-  delay : 4.5
+  delay : 4.5,
+  zIndex: -2
 });
 
-gsap.from("item5", {
+gsap.from("#item5", {
   duration: 2,
+  x : -300,
+  opacity : 0,
   marginLeft: "-25vw",
   ease: "power2.inOut",
-  delay : 4.5
+  delay : 6.5,
+  zIndex:-3
 });
-
+ */
 function scrollRight() {
 document.getElementById("scrollArea").scrollBy({ left: 255, behavior: 'smooth' });
 }

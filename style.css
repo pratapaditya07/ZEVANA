@@ -247,6 +247,9 @@ nav{
     align-items: center;    
     justify-content: center;
     margin-top: -75vh;
+    position: fixed; 
+    z-index: 100;
+    background-color: rgb(35, 154, 17);
 }
 
 .scroll-container {
@@ -257,8 +260,7 @@ nav{
     align-items: center;
     overflow-x: auto;
     scroll-behavior: smooth;
-    position: fixed; 
-    z-index: 100;
+    background-color: tomato;
 }
 
 .item {
@@ -303,7 +305,7 @@ nav{
 }
 
 #item6{
-    background-image: url(media/model6.jpg);
+    background-image: url(media/model6.jpg);;
 }
 
 #item7{
