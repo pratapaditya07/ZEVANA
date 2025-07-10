@@ -77,6 +77,18 @@ gsap.from("#item5", {
   zIndex:-3
 });
 
+gsap.to(".scroll-container", {
+  yPercent: -30,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: "#div2",
+    start: "top 25%",
+    end: "top 0%", // optional, you can stretch it if needed
+    scrub: 1,
+    markers: true // remove in production
+  }
+});
+
 function scrollRight() {
 document.getElementById("scrollArea").scrollBy({ left: 255, behavior: 'smooth' });
 }
