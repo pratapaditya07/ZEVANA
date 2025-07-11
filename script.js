@@ -85,16 +85,16 @@ gsap.to(".scroll-container", {
     start: "top 25%",
     end: "top 0%", // optional, you can stretch it if needed
     scrub: 1,
-    markers: true // remove in production
+    markers: false // remove in production
   }
 });
 
 function scrollRight() {
-document.getElementById("scrollArea").scrollBy({ left: 255, behavior: 'smooth' });
+document.getElementById("scrollArea").scrollBy({ left: 240, behavior: 'smooth' });
 }
 
 function scrollLeft() {
-document.getElementById("scrollArea").scrollBy({ left: 255, behavior: 'smooth' });
+document.getElementById("scrollArea").scrollBy({ left: 240, behavior: 'smooth' });
 }
 
 
@@ -121,7 +121,7 @@ items.forEach(item => {
 
   // Lower the center one
 if (closestItem) {
-    closestItem.style.transform = "translateY(20px)";
+    closestItem.style.transform = "translateY(40px)";
 }
 }
 
